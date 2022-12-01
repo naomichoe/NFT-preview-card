@@ -1,0 +1,64 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    color: var(--soft-blue, white);
+}
+
+div.main-img-container img {
+    max-width: 300px;
+}
+
+div.main-container h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+div.main-container p {
+    font-size: 1.1rem;
+}
+
+div.icon-text-container p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+div.first-text p {
+    color: var(--cyan, inherit);
+}
+
+div.creator-container p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+/* provided by frontend */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
