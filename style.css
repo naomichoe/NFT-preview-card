@@ -22,10 +22,6 @@ body {
     color: var(--soft-blue, white);
 }
 
-div.main-img-container img {
-    max-width: 300px;
-}
-
 div.main-container h1 {
     font-size: 1.4rem;
     font-weight: 600;
@@ -58,6 +54,37 @@ a:hover {
     cursor: pointer;
     color: var(--cyan);
 }
+
+div.main-img-container {
+    max-width: 300px;
+    position: relative;
+}
+
+div.main-img-container img#main-img {
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+div.main-img-container img#hover-img {
+    width: 10%;
+    position: absolute;
+    top: 140px;
+    left: 140px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    transition: .5s ease;
+    opacity:0;
+}
+
+div.main-img-container:hover img#hover-img {
+    opacity: 1;
+}
+/* Need to fix the hover image effects */
+/* Need to do layout next */
+
+/* START OF LAYOUTS */
+
 
 /* provided by frontend */
 .attribution { font-size: 11px; text-align: center; }
