@@ -67,20 +67,22 @@ div.main-img-container img#main-img {
 }
 
 div.main-img-container img#hover-img {
-    width: 10%;
+    width: 100%;
     position: absolute;
-    top: 140px;
-    left: 140px;
+    top: 0;
+    left: 0;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    background: rgba(0, 255, 247, 0.5); /* Black see-through */
     transition: .5s ease;
     opacity:0;
+    padding: 130px;
+    cursor: pointer;
 }
 
 div.main-img-container:hover img#hover-img {
     opacity: 1;
 }
-/* Need to fix the hover image effects */
+
 /* Need to do layout next */
 
 /* START OF LAYOUTS */
