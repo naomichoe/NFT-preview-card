@@ -20,6 +20,7 @@ body {
     font-family: 'Outfit', sans-serif;
     font-weight: 300;
     color: var(--soft-blue, white);
+    background-color: var(--very-dark-blue-main-BG);
 }
 
 div.main-container h1 {
@@ -58,12 +59,14 @@ a:hover {
 div.main-img-container {
     max-width: 300px;
     position: relative;
+    align-self: center;
 }
 
 div.main-img-container img#main-img {
     width: 100%;
     position: relative;
     top: 0;
+    border-radius: 10px;
 }
 
 div.main-img-container img#hover-img {
@@ -71,11 +74,12 @@ div.main-img-container img#hover-img {
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 10px;
     background: rgb(0, 0, 0);
     background: rgba(0, 255, 247, 0.5); /* Black see-through */
     transition: .5s ease;
     opacity:0;
-    padding: 130px;
+    padding: 120px;
     cursor: pointer;
 }
 
@@ -83,10 +87,29 @@ div.main-img-container:hover img#hover-img {
     opacity: 1;
 }
 
-/* Need to do layout next */
-
 /* START OF LAYOUTS */
 
+div.main-container {
+    max-width: 350px;
+    background-color: var(--very-dark-blue-card-BG);
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+div.icon-text-container {
+    display: flex;
+
+}
+
+div.first-text, div.second-text {
+    display: flex;
+
+}
 
 /* provided by frontend */
 .attribution { font-size: 11px; text-align: center; }
